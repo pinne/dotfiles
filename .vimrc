@@ -118,12 +118,17 @@ if has("autocmd")
   autocmd FileType java setlocal ts=4 sts=4 sw=4 noexpandtab
   autocmd FileType sql setlocal ts=3 sts=3 sw=3 expandtab
   autocmd FileType tex setlocal ts=3 sts=3 sw=3 expandtab spell
+  autocmd FileType text setlocal ts=4 sts=4 sw=4 expandtab spell
   autocmd FileType bib setlocal ts=3 sts=3 sw=3 expandtab
   autocmd FileType haskell setlocal autoindent expandtab sta sw=4 sts=4 ts=2
 
   " Treat .rss files as XML
   autocmd BufNewFile,BufRead *.rss setfiletype xml
   autocmd BufNewFile,BufRead *.gv setfiletype dot
+
+  " Treat .rss files as XML
+  autocmd BufNewFile,BufRead *.rss setfiletype xml
+  au BufRead,BufNewFile *.txt,*.md setfiletype text
 endif
 
 " These settings are needed for latex-suite
