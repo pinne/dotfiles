@@ -8,6 +8,7 @@ Create symlinks:
     ln -s ~/dotfiles/vim/gvimrc ~/.gvimrc
     ln -s ~/dotfiles/vim/vimrc ~/.vimrc
     ln -s ~/dotfiles/bashrc ~/.bashrc
+    ln -s ~/dotfiles/Xdefaults ~/.Xdefaults
 
 Switch to the `~/.vim` directory, and fetch submodules:
 
