@@ -11,8 +11,8 @@ nmap <leader>l :set list!<CR>
 set listchars=tab:▸\ ,eol:¬
 
 "Invisible character colors
-highlight NonText guifg=#4a4a59
-highlight SpecialKey guifg=#4a4a59
+highlight NonText guifg=#e0e0ff
+highlight SpecialKey guifg=#e0e0ff
 
 " tell Vim to always put a status line in, even if there is only one
 " window
@@ -37,9 +37,9 @@ set number
 autocmd VimEnter * set vb t_vb=
 
 " set guifont=dina\ 12 
-set guifont=PragmataPro\ 13 
+set guifont=PragmataPro\ 14
 
 " highlight long lines
-:au BufWinEnter * let w:m1=matchadd('Search', '\%<81v.\%>77v', -1)
-:au BufWinEnter * let w:m2=matchadd('ErrorMsg', '\%>80v.\+', -1)
+":au BufWinEnter * let w:m1=matchadd('Search', '\%<81v.\%>77v', -1)
+":au BufWinEnter * let w:m2=matchadd('ErrorMsg', '\%>80v.\+', -1)
 

@@ -1,3 +1,6 @@
+call pathogen#runtime_append_all_bundles()
+call pathogen#infect()
+
 " F8 Build & Run, C
 nnoremap <F8> :!gcc % -Wall && ./a.out<CR>
 
@@ -138,6 +141,3 @@ filetype on
 let g:tex_flavor='latex'
 set grepprg=grep\ -nH\ $*
 
-" Automatic LaTeX compile and XDVI refresh
-"au BufWritePost *.tex silent call Tex_CompileLatex()
-"au BufWritePost *.tex silent !pkill -USR1 xdvi.bin
