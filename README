@@ -15,3 +15,10 @@ Switch to the `~/.vim` directory, and fetch submodules:
     cd ~/dotfiles/
     git submodule init
     git submodule update
+
+To add a plugin:
+
+    git submodule add https://github.com/scrooloose/nerdtree.git vim/bundle/nerdtree
+
+To upgrade all bundled plugins:
+    git submodule foreach git pull origin master
