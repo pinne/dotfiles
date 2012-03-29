@@ -8,6 +8,12 @@ nnoremap <F8> :!gcc % -Wall && ./a.out<CR>
 nmap <F9> :!make clean && make pdf
 map ,cd :lcd %:h<CR>
 
+" Ctrl-dir navigates between windows
+:nmap <silent> <C-h> :wincmd h<CR>
+:nmap <silent> <C-j> :wincmd j<CR>
+:nmap <silent> <C-k> :wincmd k<CR>
+:nmap <silent> <C-l> :wincmd l<CR>
+
 " Set the search scan to wrap around the file
 set wrapscan
 
