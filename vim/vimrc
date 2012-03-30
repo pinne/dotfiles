@@ -3,7 +3,7 @@ call pathogen#runtime_append_all_bundles()
 call pathogen#infect()
 
 " F8 Build & Run, C
-nnoremap <F8> :!gcc % -Wall && ./a.out<CR>
+nmap <F8> :TagbarToggle<CR>
 
 nmap <F9> :!make clean && make pdf
 map ,cd :lcd %:h<CR>
