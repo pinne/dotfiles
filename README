@@ -18,7 +18,7 @@ Switch to the `~/.vim` directory, and fetch submodules:
 
 To add a plugin:
 
-    git submodule add https://github.com/scrooloose/nerdtree.git vim/bundle/nerdtree
+    git submodule add https://github.com/user/plugin-name.git ~/dotfiles/vim/bundle/plugin-dir
 
 To upgrade all bundled plugins:
     git submodule foreach git pull origin master
