@@ -5,7 +5,7 @@ call pathogen#infect()
 " F8 Build & Run, C
 nmap <F8> :TagbarToggle<CR>
 
-nmap <F9> :!make clean && make pdf
+" Change to directory of the active file
 map ,cd :lcd %:h<CR>
 
 " Ctrl-dir navigates between windows
@@ -53,20 +53,6 @@ au BufRead /tmp/mutt-* set tw=72
 " This is the timeout used while waiting for user input on a
 " multi-keyed macro or while just sitting and waiting for another
 " key to be pressed measured in milliseconds.
-"
-" i.e. for the ",d" command, there is a "timeoutlen" wait
-"      period between the "," key and the "d" key.  If the
-"      "d" key isn't pressed before the timeout expires,
-"      one of two things happens: The "," command is executed
-"      if there is one (which there isn't) or the command aborts.
-"
-" The idea here is that if you have two commands, say ",dv" and
-" ",d" that it will take 'timeoutlen' milliseconds to recognize
-" that you're going for ",d" instead of ",dv"
-"
-" In general you should endeavour to avoid that type of
-" situation because waiting 'timeoutlen' milliseconds is
-" like an eternity.
 set timeoutlen=500
 
 " Keep some stuff in the history
@@ -104,10 +90,6 @@ set ts=8 sts=8 sw=8 noexpandtab
 
 " Column width
 set textwidth=80
-
-"colorscheme fruity
-"set background=light
-"colorscheme mayansmoke
 
 filetype plugin on
 
