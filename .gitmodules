@@ -23,3 +23,8 @@
 	url = https://github.com/godlygeek/tabular.git
 	ignore = dirty
 
+[submodule "/home/simon/dotfiles/vim/bundle/vim-colors-solarized"]
+	path = /home/simon/dotfiles/vim/bundle/vim-colors-solarized
+	url = https://github.com/altercation/vim-colors-solarized.git
+	ignore = dirty
+
