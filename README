@@ -13,12 +13,12 @@ Create symlinks:
 Switch to the `~/.vim` directory, and fetch submodules:
 
     cd ~/dotfiles/
-    git submodule init
-    git submodule update
+    submodule update --init
 
 To add a plugin:
 
-    git submodule add https://github.com/user/plugin-name.git ~/dotfiles/vim/bundle/plugin-dir
+    git submodule add https://github.com/user/plugin-name.git vim/bundle/plugin-dir
 
 To upgrade all bundled plugins:
+
     git submodule foreach git pull origin master
