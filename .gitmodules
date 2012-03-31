@@ -18,13 +18,11 @@
 	url = https://github.com/majutsushi/tagbar.git
 	ignore = dirty
 
-[submodule "/home/simon/dotfiles/vim/bundle/tabular"]
-	path = /home/simon/dotfiles/vim/bundle/tabular
-	url = https://github.com/godlygeek/tabular.git
-	ignore = dirty
-
-[submodule "/home/simon/dotfiles/vim/bundle/vim-colors-solarized"]
-	path = /home/simon/dotfiles/vim/bundle/vim-colors-solarized
+[submodule "vim/bundle/vim-colors-solarized"]
+	path = vim/bundle/vim-colors-solarized
 	url = https://github.com/altercation/vim-colors-solarized.git
 	ignore = dirty
 
+[submodule "vim/bundle/tabular"]
+	path = vim/bundle/tabular
+	url = https://github.com/godlygeek/tabular.git
