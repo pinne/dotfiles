@@ -13,7 +13,7 @@ Create symlinks:
 Switch to the `~/.vim` directory, and fetch submodules:
 
     cd ~/dotfiles/
-    submodule update --init
+    git submodule update --init
 
 To add a plugin:
 
