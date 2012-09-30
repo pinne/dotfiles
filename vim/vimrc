@@ -125,6 +125,7 @@ if has("autocmd")
   " Treat .rss files as XML
   autocmd BufNewFile,BufRead *.rss setfiletype xml
   au BufRead,BufNewFile *.txt,*.md setfiletype text
+  autocmd FileType java set tags=~/.tags
 endif
 
 " These settings are needed for latex-suite

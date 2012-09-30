@@ -15,7 +15,7 @@ set listchars=tab:▸\ ,eol:¬
 set laststatus=2
 
 " Hide the mouse pointer while typing
-set mousehide
+set nomousehide
 
 " The GUI (i.e. the 'g' in 'gvim') is fantastic, but let's not be
 " silly about it :)  The GUI is fantastic, but it's fantastic for

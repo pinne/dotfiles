@@ -1,18 +1,25 @@
 Installation:
 
-    git clone git://github.com/pinne/dotfiles.git ~/dotfiles
+Replace this with the dotfile path.
+
+    DOT_PATH=~/dotfiles
+
+    git clone git://github.com/pinne/dotfiles.git $DOT_PATH
 
 Create symlinks:
 
-    ln -s ~/dotfiles/vim/ ~/.vim
-    ln -s ~/dotfiles/vim/gvimrc ~/.gvimrc
-    ln -s ~/dotfiles/vim/vimrc ~/.vimrc
-    ln -s ~/dotfiles/bashrc ~/.bashrc
-    ln -s ~/dotfiles/Xdefaults ~/.Xdefaults
+
+    ln -s $DOT_PATH/vim/ ~/.vim
+    ln -s $DOT_PATH/vim/gvimrc ~/.gvimrc
+    ln -s $DOT_PATH/vim/vimrc ~/.vimrc
+    ln -s $DOT_PATH/bashrc ~/.bashrc
+    ln -s $DOT_PATH/Xdefaults ~/.Xdefaults
+    ln -s $DOT_PATH/tmux.conf .tmux.conf
+
 
 Switch to the `~/.vim` directory, and fetch submodules:
 
-    cd ~/dotfiles/
+    cd $DOT_PATH/
     git submodule update --init
 
 To add a plugin:
