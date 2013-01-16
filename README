@@ -17,7 +17,7 @@ Create symlinks:
     ln -s $DOT_PATH/tmux.conf .tmux.conf
 
 
-Switch to the `~/.vim` directory, and fetch submodules:
+Fetch submodules:
 
     cd $DOT_PATH/
     git submodule update --init

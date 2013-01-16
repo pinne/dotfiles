@@ -114,10 +114,13 @@ if has("autocmd")
   autocmd FileType text setlocal ts=4 sts=4 sw=4 expandtab spell
   autocmd FileType bib setlocal ts=3 sts=3 sw=3 expandtab
   autocmd FileType haskell setlocal autoindent expandtab sta sw=4 sts=4 ts=2
+  autocmd FileType python setlocal ts=4 sts=4 sw=4 expandtab
+  autocmd FileType sh setlocal ts=4 sts=4 sw=4 expandtab
 
   " Treat .rss files as XML
   autocmd BufNewFile,BufRead *.rss setfiletype xml
   autocmd BufNewFile,BufRead *.gv setfiletype dot
+  autocmd BufNewFile,BufRead *.sh setfiletype sh
 
   " Auto-compile Coffeescript on write
   autocmd BufWritePost *.coffee silent CoffeeMake! -b | cwindow  
