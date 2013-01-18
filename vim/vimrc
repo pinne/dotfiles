@@ -14,6 +14,10 @@ map ,cd :lcd %:h<CR>
 :nmap <silent> <C-k> :wincmd k<CR>
 :nmap <silent> <C-l> :wincmd l<CR>
 
+" vpaste.net
+map vp :exec "w !vpaste ft=".&ft<CR>
+vmap vp <ESC>:exec "'<,'>w !vpaste ft=".&ft<CR>
+
 " Set the search scan to wrap around the file
 set wrapscan
 
@@ -116,6 +120,7 @@ if has("autocmd")
   autocmd FileType haskell setlocal autoindent expandtab sta sw=4 sts=4 ts=2
   autocmd FileType python setlocal ts=4 sts=4 sw=4 expandtab
   autocmd FileType sh setlocal ts=4 sts=4 sw=4 expandtab
+  autocmd FileType erlang setlocal ts=4 sts=4 sw=4 expandtab
 
   " Treat .rss files as XML
   autocmd BufNewFile,BufRead *.rss setfiletype xml

@@ -1,8 +1,3 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =6
-let g:netrw_dirhist_1='/home/simon/.irssi'
-let g:netrw_dirhist_2='/home/simon/Documents/Code/Java/workspace/webshop/Servers/Tomcat v6.0 Server at localhost-config'
-let g:netrw_dirhist_3='/home/simon/Documents/Code/Java/workspace/webshop/tomcat/conf'
-let g:netrw_dirhist_4='/home/simon/Documents/Code/Java/workspace/.metadata/.plugins/org.eclipse.core.runtime/.settings'
-let g:netrw_dirhist_5='/home/simon/Documents/Code/Java/workspace/tomcat/conf'
-let g:netrw_dirhist_6='/home/simon/Documents/Code/Java/workspace/tomcat/webapps'
+let g:netrw_dirhist_cnt =1
+let g:netrw_dirhist_1='/home/simon/Documents/School/Server/expressapp/views'
