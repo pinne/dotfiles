@@ -40,3 +40,6 @@
 [submodule "vim/bundle/easytags"]
 	path = vim/bundle/easytags
 	url = https://github.com/xolox/vim-easytags.git
+[submodule "vim/bundle/recover"]
+	path = vim/bundle/recover
+	url = https://github.com/chrisbra/Recover.vim.git
