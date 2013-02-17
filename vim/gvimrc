@@ -34,5 +34,5 @@ set number
 autocmd VimEnter * set vb t_vb=
 
 " set guifont=dina\ 12 
-set guifont=PragmataPro\ 14
+set guifont=PragmataPro\ 16
 
