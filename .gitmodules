@@ -43,3 +43,6 @@
 [submodule "vim/bundle/recover"]
 	path = vim/bundle/recover
 	url = https://github.com/chrisbra/Recover.vim.git
+[submodule "vim/bundle/vim-session"]
+	path = vim/bundle/vim-session
+	url = https://github.com/xolox/vim-session.git
