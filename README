@@ -7,6 +7,10 @@ Replace this with the dotfile path.
 
     git clone git://github.com/pinne/dotfiles.git $DOT_PATH
 
+Fix path:
+
+    PATH=$PATH:$BIN_PATH
+
 Create symlinks:
 
     ln -s $DOT_PATH/vim/ ~/.vim
@@ -19,7 +23,7 @@ Create symlinks:
 Use the git-prompt script, Fedora:
 
     cp /usr/share/git-core/contrib/completion/git-prompt.sh $BIN_PATH/
-    sed -i "2isource $BIN_PATH/bash_git.sh" $DOT_PATH/bashrc
+    sed -i "2isource $BIN_PATH/git-prompt.sh" $DOT_PATH/bashrc
 
 Fetch submodules:
 
