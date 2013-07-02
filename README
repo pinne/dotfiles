@@ -3,19 +3,23 @@ Installation:
 Replace this with the dotfile path.
 
     DOT_PATH=~/dotfiles
+    BIN_PATH=~/bin
 
     git clone git://github.com/pinne/dotfiles.git $DOT_PATH
 
 Create symlinks:
 
-
     ln -s $DOT_PATH/vim/ ~/.vim
     ln -s $DOT_PATH/vim/gvimrc ~/.gvimrc
     ln -s $DOT_PATH/vim/vimrc ~/.vimrc
     ln -s $DOT_PATH/bashrc ~/.bashrc
-    ln -s $DOT_PATH/Xdefaults ~/.Xdefaults
     ln -s $DOT_PATH/tmux.conf .tmux.conf
+    ln -s $DOT_PATH/inputrc ~/.inputrc
 
+Use the git-prompt script, Fedora:
+
+    cp /usr/share/git-core/contrib/completion/git-prompt.sh $BIN_PATH/
+    sed -i "2isource $BIN_PATH/bash_git.sh" $DOT_PATH/bashrc
 
 Fetch submodules:
 

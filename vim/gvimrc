@@ -25,8 +25,8 @@ set guioptions=ac
 
 syntax enable
 set background=light
-"colors mayansmoke
-colors solarized
+colors mayansmoke
+"colors solarized
 
 set number
 
