@@ -1,5 +1,4 @@
 set -o vi
-source /home/simon/bin/git-prompt.sh
 
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
