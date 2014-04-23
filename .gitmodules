@@ -49,3 +49,6 @@
 [submodule "vim/bundle/lua.vim"]
 	path = vim/bundle/lua.vim
 	url = git@github.com:vim-scripts/lua.vim.git
+[submodule "vim/bundle/vim-misc"]
+	path = vim/bundle/vim-misc
+	url = git@github.com:xolox/vim-misc.git
