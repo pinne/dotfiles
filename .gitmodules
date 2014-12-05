@@ -52,3 +52,6 @@
 [submodule "vim/bundle/vim-misc"]
 	path = vim/bundle/vim-misc
 	url = git@github.com:xolox/vim-misc.git
+[submodule "vim/bundle/vim-sleuth"]
+	path = vim/bundle/vim-sleuth
+	url = git@github.com:tpope/vim-sleuth.git
