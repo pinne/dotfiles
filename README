@@ -20,6 +20,10 @@ Create symlinks:
     ln -s $DOT_PATH/tmux.conf .tmux.conf
     ln -s $DOT_PATH/inputrc ~/.inputrc
 
+    # for fish shell
+    ln -s $DOT_PATH/fish/functions/g.fish ~/.config/fish/functions/g.fish
+    ln -s $DOT_PATH/fish/functions/fish_prompt.fish ~/.config/fish/functions/fish_prompt.fish
+
 Use the git-prompt script, Fedora:
 
     cp /usr/share/git-core/contrib/completion/git-prompt.sh $BIN_PATH/
