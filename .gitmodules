@@ -25,36 +25,36 @@
 [submodule "vim/bundle/vim-git"]
 	path = vim/bundle/vim-git
 	url = https://github.com/tpope/vim-git.git
+
 [submodule "vim/bundle/vimerl"]
 	path = vim/bundle/vimerl
 	url = https://github.com/jimenezrick/vimerl.git
+
 [submodule "vim/bundle/vim-fugitive"]
 	path = vim/bundle/vim-fugitive
 	url = https://github.com/tpope/vim-fugitive.git
+
 [submodule "bundle/colorschemes"]
 	path = bundle/colorschemes
 	url = git@github.com:flazz/vim-colorschemes.git
+
 [submodule "vim/bundle/colorschemes"]
 	path = vim/bundle/colorschemes
 	url = git@github.com:flazz/vim-colorschemes.git
-[submodule "vim/bundle/easytags"]
-	path = vim/bundle/easytags
-	url = https://github.com/xolox/vim-easytags.git
+
 [submodule "vim/bundle/recover"]
 	path = vim/bundle/recover
 	url = https://github.com/chrisbra/Recover.vim.git
-[submodule "vim/bundle/vim-session"]
-	path = vim/bundle/vim-session
-	url = https://github.com/xolox/vim-session.git
+
 [submodule "vim/bundle/lua.vim"]
 	path = vim/bundle/lua.vim
 	url = git@github.com:vim-scripts/lua.vim.git
-[submodule "vim/bundle/vim-misc"]
-	path = vim/bundle/vim-misc
-	url = git@github.com:xolox/vim-misc.git
+
 [submodule "vim/bundle/vim-sleuth"]
 	path = vim/bundle/vim-sleuth
 	url = git@github.com:tpope/vim-sleuth.git
+
 [submodule "vim/bundle/vim-perl"]
 	path = vim/bundle/vim-perl
 	url = git@github.com:vim-perl/vim-perl.git
+
