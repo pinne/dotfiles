@@ -111,19 +111,20 @@ if has("autocmd")
   autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
 
   " Customisations based on house-style (arbitrary)
-  autocmd FileType html setlocal ts=2 sts=2 sw=2 expandtab
-  autocmd FileType css setlocal ts=2 sts=2 sw=2 expandtab
-  autocmd FileType javascript setlocal ts=4 sts=4 sw=4 noexpandtab
+  autocmd FileType html         setlocal ts=2 sts=2 sw=2 expandtab
+  autocmd FileType css          setlocal ts=2 sts=2 sw=2 expandtab
+  autocmd FileType javascript   setlocal ts=4 sts=4 sw=4 expandtab
   autocmd FileType coffeescript setlocal ts=2 sts=2 sw=2 expandtab
-  autocmd FileType java setlocal ts=4 sts=4 sw=4 noexpandtab
-  autocmd FileType sql setlocal ts=3 sts=3 sw=3 expandtab
-  autocmd FileType tex setlocal ts=3 sts=3 sw=3 expandtab spell
-  autocmd FileType text setlocal ts=4 sts=4 sw=4 expandtab spell
-  autocmd FileType bib setlocal ts=3 sts=3 sw=3 expandtab
-  autocmd FileType haskell setlocal autoindent expandtab sta sw=4 sts=4 ts=2
-  autocmd FileType python setlocal ts=4 sts=4 sw=4 expandtab
-  autocmd FileType sh setlocal ts=4 sts=4 sw=4 expandtab
-  autocmd FileType erlang setlocal ts=4 sts=4 sw=4 expandtab
+  autocmd FileType java         setlocal ts=4 sts=4 sw=4 noexpandtab
+  autocmd FileType sql          setlocal ts=3 sts=3 sw=3 expandtab
+  autocmd FileType tex          setlocal ts=3 sts=3 sw=3 expandtab spell
+  autocmd FileType text         setlocal ts=4 sts=4 sw=4 expandtab spell
+  autocmd FileType bib          setlocal ts=3 sts=3 sw=3 expandtab
+  autocmd FileType haskell      setlocal sw=4 sts=4 ts=2 autoindent expandtab sta
+  autocmd FileType python       setlocal ts=4 sts=4 sw=4 expandtab
+  autocmd FileType sh           setlocal ts=4 sts=4 sw=4 expandtab
+  autocmd FileType erlang       setlocal ts=4 sts=4 sw=4 expandtab
+  autocmd FileType perl         setlocal ts=4 sts=4 sw=4 expandtab
 
   " Treat .rss files as XML
   autocmd BufNewFile,BufRead *.rss setfiletype xml
@@ -132,10 +133,9 @@ if has("autocmd")
 
   " Auto-compile Coffeescript on write
   autocmd BufWritePost *.coffee silent CoffeeMake! -b | cwindow  
+  autocmd BufRead,BufNewFile *.txt,*.md setfiletype text
 
-  " Treat .rss files as XML
-  autocmd BufNewFile,BufRead *.rss setfiletype xml
-  au BufRead,BufNewFile *.txt,*.md setfiletype text
+  " Tags files
   autocmd FileType java set tags=~/.tags
 endif
 
