@@ -1,13 +1,17 @@
 set -o vi
-source /git-prompt.sh
+source ~/bin/git-prompt.sh
 
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
+hg_ps1() {
+    hg prompt "{({branch})}{ at {bookmark}}{status}" 2> /dev/null
+}
+
 #PS1='[\u@\h \W]\$ '
 #PS1='\u \$ \[\e[m\]'
 #PS1='[\u@\h`__git_ps1` \W]\n\$ '
-PS1='\[\e[0;34m\]\u\[\e[m\] \[\e[1;34m\]\w\[\e[m\] \[\e[1;32m\]\e[0;30m`__git_ps1`\n\$\[\e[m\] \[\e[0m\]'
+PS1='\[\e[0;34m\]\u\[\e[m\] \[\e[1;34m\]\w\[\e[m\] \[\e[1;32m\]\e[0;30m`__git_ps1``hg_ps1`\n\$\[\e[m\] \[\e[0m\]'
 PS2='> '
 PS2='> '
 PS3='> '
@@ -19,7 +23,7 @@ export LC_LANG="en_US.UTF-8"
 export EDITOR="vim"
 export PATH="$PATH:~/bin"
 
-setterm -blength 0
+#setterm -blength 0
 
 #export LD_PRELOAD=libetc.so
 
