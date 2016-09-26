@@ -17,7 +17,7 @@ PS2='> '
 PS3='> '
 PS4='+ '
 
-[ -r /etc/bash_completion   ] && . /etc/bash_completion
+[ -r /etc/bash_completion ] && . /etc/bash_completion
 export LC_TIME="sv_SE.UTF-8"
 export LC_LANG="en_US.UTF-8"
 export EDITOR="vim"
