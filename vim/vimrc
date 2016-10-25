@@ -37,6 +37,10 @@ set backspace=2
 " set of possible options
 set cpoptions=ces$
 
+" Move visual block
+vnoremap J :m '>+1<CR>gv=gv
+vnoremap K :m '<-2<CR>gv=gv
+
 " Use the same symbols as TextMate for tabstops and EOLs
 set listchars=tab:▸\ ,eol:¬
 set nolist
@@ -53,6 +57,11 @@ set diffopt=vertical
 
 " Hide the mouse pointer while typing
 set mousehide
+
+" Make the mouse work like in gvim
+:set ttyfast
+:set mouse=a
+:set ttymouse=xterm2
 
 " For Mutt
 au BufRead /tmp/mutt-* set tw=72
